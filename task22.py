@@ -10,14 +10,12 @@ i = 0
 for i in range(n) :
   print('Введите',i + 1,'-й элемент массива')
   list1.append(int(input()))
-  i = i + 1
 
 m = int(input('Введите количество элементов во вотором массиве m: '))
 list2 = []
 for i in range(m) :
   print('Введите',i + 1,'-й элемент массива')
   list2.append(int(input()))
-  i = i + 1
 
 list1_set = set(list1)
 list2_set = set(list2)
@@ -30,7 +28,6 @@ for i in range(len(intersection)) :
     intersection[i] = min
     intersection.pop(i)
     intersection.append(min)
-  i += 1
 
 print(intersection)
 
